@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Header({ name }) {
   return (
-    <header className="pt-20 pb-12 flex flex-col items-center">
-      <div className="w-12 h-12 rounded-full mb-4 bg-gradient-to-r from-blue-500 to-teal-500 mt-8" />
+    <header className="pt-20  flex flex-col items-center w-full">
+      <div className="w-12 h-12 rounded-full mb-4 bg-gradient-to-r from-blue-500 to-teal-500 mt-8  " />
       <Link href="/">
         <a className="text-2xl text-center text-black dark:text-white mb-4">{name}</a>
       </Link>
@@ -21,6 +21,11 @@ export default function Header({ name }) {
           <p> Link til repo</p>
 
         </a>
+        <a href="https://reaptime.herokuapp.com" className="flex items-center gap-x-5 ">
+        <svg class="svg-icon" width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M257.563 25.156c353.16 276.87 16.918 408.895-87.875 293.25l-40.75 37.125 50.812 50.345c217.562 181.363 524.73-252.058 77.813-380.72zM110.75 364.28c-5.525 1.065-8.975 2.957-11.313 5.25-1.956 1.922-3.248 4.556-4.25 7.564l55.188 52.844c5.468-1.008 9.264-2.796 11.28-4.688 1.997-1.872 3.095-3.864 3.095-7.53l-54-53.44zm-24.72 30.314L30.407 445.28C13.67 472.28 45.1 506.478 81.5 489.94l51.53-50.282-47-45.062z" />
+        </svg>
+        <p>Reap Time Tracking</p></a>
       </div>
       <style jsx>{`
 .tooltip {
